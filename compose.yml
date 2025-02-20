@@ -1,0 +1,8 @@
+services:
+  ns3-simulator:
+    build: .
+    container_name: ns3_simulator
+    volumes:
+      - ./simulation_results:/opt/ns-3/scratch
+    stdin_open: true
+    tty: true
